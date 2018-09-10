@@ -5,13 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Bootstrap</title>
         <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     </head>
     <body>
         <!--top bar-->
-        <div class="top bar">
+        <div class="top-bar">
             <div class="container">
                 <div class="row">
-                    <div class="first col-sm-6">
+                    <div class="first col-sm-8">
                         <ul>
                             <li> <a href="#">My Wishlist</a></li>
                             <li> <a href="#">My Account</a></li>
@@ -19,8 +21,8 @@
                             <li> <a href="#">Checkout</a></li>
                         </ul>
                     </div>
-                    <div class="col-sm-6">
-                        <p>Welcome visitor you can <a href="#">login</a> or<a href="#">create an account</a></p>
+                    <div class="second col-sm-4">
+                        <p>Welcome visitor you can <a href="#">login</a> or<a href="#"> create an account</a></p>
                     </div>
                 </div>
             </div>
@@ -30,115 +32,122 @@
         <div class="logo">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6">
-        <img src="images/logo.jpg" alt="">
+                    <div class="third col-sm-8">
+                        <img src="images/logo.jpg" alt="">
                     </div>
-                    <div class="col-sm-6">
-        <a href="#">US Dollar</a>
-        <a href="#">English</a>
-        <a ref="#">cart</a>
-        <br>
+                    <div class="fourth col-sm-4">
+                        <ul>
+                            <li><a href="#">US Dollar</a></li>
+                            <li><a href="#">English</a></li>
+                            <li class="cart"> <a href="#">Cart</a></li>
+                        </ul>
+                        <br>
                     </div>
                 </div>
             </div>
         </div>
 
         <!--nav bar-->
-        <div class="navbar">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-8">
-        <ul>
-            <li> <a href="#">Fashion</a></li>
-            <li> <a href="#">Electronics</a></li>
-            <li> <a href="#">Gifts</a></li>
-            <li> <a href="#">Books</a></li>
-            <li> <a href="#">At Home</a></li>
-            <li> <a href="#">Music</a></li>
-        </ul>
+                    <div class="navbar col-sm-8">
+                        <ul>
+                            <li> <a href="#">Fashion</a></li>
+                            <li> <a href="#">Electronics</a></li>
+                            <li> <a href="#">Gifts</a></li>
+                            <li> <a href="#">Books</a></li>
+                            <li> <a href="#">At Home</a></li>
+                            <li> <a href="#">Music</a></li>
+                        </ul>
                     </div>
                     <div class="col-sm-4">
-        <br>
-        <form action="http://www.example.com/comments.php">
-            <textarea name="comments" col="20" rowa="4">Search here...</textarea>
-            <input type="submit" value="Search"
-        </form>
-        <br>
+                        <br>
+                        <form>
+                            <input type="text" placeholder="Search Here..."/>
+                            <input class="search" type="submit" value="Search">
+                        </form>
                     </div>
                 </div>
             </div>
-        </div>
 
         <!--hero image-->
-        <div class=" hero container">
-            <div class="row">
-                <div class="col-sm-12">
-        <img src="images/hero.jpg" alt="">
-        <br>
-                    
-                </div>
-            </div>
+        <div class=" hero">
+                    <img class="img-responsive" src="images/hero.jpg" alt="">
         </div>
 
         <!--next 3 pics-->
         <div class="sale container">
             <div class="row">
-                <div class="col-sm-6">
-        <br>
-        <img src="images/img1.jpg" alt="">
-        <img src="images/img2.jpg" alt="">
-        <img src="images/img3.jpg" alt="">
-        <br>
+                <div class="col-sm-4">
+                    <img src="images/img1.jpg" alt="">
+                    </div>
+                    <div class="col-sm-4">
+                    <img src="images/img2.jpg" alt="">
+                    </div>
+                    <div class="col-sm-4">
+                    <img src="images/img3.jpg" alt="">
+                    </div>
+                    <br>
                 </div>
             </div>
         </div>
         
         <!--latest-->
-        <div class="latest">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-3">
-        <h4>Latest</h4>
-        <p>Buy discount items from the latest collections of world brands.</p>
-        <br>
-        <img src="images/img4.jpg" alt="">
-        <h6>Jewelry bracelet Cara Accessories</h6>
-        <a href="#">ADD TO CART</a>
+                    <div class="latest col-sm-10">
+                        <h2>Latest</h2>
+                        <p>Buy discount items from the latest collections of world brands.</p>
+                    </div>
+                    <div class="arrow col-sm-2">
+                        <a href="#">&lt;</a>
+                        <a href="#">&gt;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="add row">
+                    <div class="col-sm-3"><br>
+                        <img src="images/img4.jpg" alt="">
+                        <h6>Jewelry bracelet Cara Accessories</h6>
+                        <a href="" target="" class="button">ADD TO CART</a>
                     </div>
                     <div class="col-sm-3">
-        <br>
-        <img src="images/img5.jpg" alt="">
-        <h6>Jessica London Short Trench Coat</h6>
-        <a href="#">ADD TO CART</a>
+                        <br>
+                        <img src="images/img5.jpg" alt="">
+                        <h6>Jessica London Short Trench Coat</h6>
+                        <a href="#">ADD TO CART</a>
                     </div>
                     <div class="col-sm-3">
-        <br>
-        <img src="images/img6.jpg" alt="">
-        <h6>Mocca Stretch Leather Gloves</h6>
-        <a href="#">ADD TO CART</a>
+                        <br>
+                        <img src="images/img6.jpg" alt="">
+                        <h6>Mocca Stretch Leather Gloves</h6>
+                        <a href="#">ADD TO CART</a>
                     </div>
                     <div class="col-sm-3">
-        <br>
-        <img src="images/img7.jpg" alt="">
-        <h6>Limited Edition Knitted Sweater</h6>
-        <a href="#">ADD TO CART</a>
+                        <br>
+                        <img src="images/img7.jpg" alt="">
+                        <h6>Limited Edition Knitted Sweater</h6>
+                        <a href="#">ADD TO CART</a>
                     </div>
-        <br>
+                </div>
+            </div>
+            <br>
 
         <!--Welcome to Venedor-->
         <div class="welcome">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-        <h4>Welcome to Venedor</h4>
-        <p> Venedor is a fully responsive PSD theme designed for all types of platforms. WooCommerce, Magento, OpenCart, PrestaShop and other. Based on Bootstrap's 12 column 1200px responsive grid Template. Great looks on desktops, tablets and mobiles.</p>
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nam voluptatem consequatur aut rem maxime hic molestias, nulla officia quidem
-        </p>
+                        <h2>Welcome to Venedor</h2>
+                        <p> Venedor is a fully responsive PSD theme designed for all types of platforms. WooCommerce, Magento, OpenCart, PrestaShop and other. Based on Bootstrap's 12 column 1200px responsive grid Template. Great looks on desktops, tablets and mobiles.</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nam voluptatem consequatur aut rem maxime hic molestias, nulla officia quidem
+                        </p>
                     </div>
                     <div class="col-sm-6">
-        <img src="images/img8.jpg"
-        <br>
+                        <img src="images/img8.jpg">
+                        <br>
                     </div>
                 </div>
             </div>
@@ -147,30 +156,41 @@
         <div class="best">
             <div class="container">
                 <div class="row">
+                    <div class="hey col-sm-10">
+                        <h2>Bestsellers</h2>
+                        <p>Special offers and biggest discounts for the most popular products.</p>
+                    </div>
+                    <div class="point col-sm-2">
+                        <a href="#">&lt;</a>
+                        <a href="#">&gt;</a>
+                    </div>
+                </div>
+                <div class="hello row">
                     <div class="col-sm-3">
-        <h4>Bestsellers</h4>
-        <p>Special offers and biggest discounts for the most popular products.</p>
-        <img src="images/img9.jpg" alt="">
-        <h6>Color Pop Heels</h6>
-        <a href="#">ADD TO CART</a>
+                        <img src="images/img9.jpg" alt="">
+                        <h6>Color Pop Heels</h6>
+                        <br>
+                        <a href="" target="blank" class="button">ADD TO CART</a>
                     </div>
                     <div class="col-sm-3">
-        <br>
-        <img src="images/img10.jpg" alt="">
-        <h6>Burgundy Chanel Purse</h6>
-        <a href="#">ADD TO CART</a>
+                        <br>
+                        <img src="images/img10.jpg" alt="">
+                        <h6>Burgundy Chanel Purse</h6>
+                        <a href="#">ADD TO CART</a>
                     </div>
                     <div class="col-sm-3">
-        <br>
-        <img src="images/img11.jpg" alt="">
-        <h6>Fancy Tap Shoes</h6>
-        <a href="#">ADD TO CART</a>
+                        <br>
+                        <img src="images/img11.jpg" alt="">
+                        <h6>Fancy Tap Shoes</h6>
+                        <br>
+                        <a href="#">ADD TO CART</a>
                     </div>
                     <div class="col-sm-3">
-        <br>
-        <img src="http://placehold.it/200x200" alt="">
-        <h6>Nice Leather White Coat</h6>
-        <a href="#">ADD TO CART</a>
+                        <br>
+                        <img src="images/img12.jpg" alt="">
+                        <h6>Nice Leather White Coat</h6>
+                        <br>
+                        <a href="#">ADD TO CART</a>
                     </div>
                 </div>
             </div>
@@ -181,134 +201,156 @@
         <div class="man">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6">
-        <h4>Manufacturers</h4> 
+                    <div class="no col-sm-10">
+                        <h2>Manufacturers</h2> 
                     </div>
-                    <div class="col-sm-6">
-                        <a>&lt;</a> <a>&gt;</a>
+                    <div class="go col-sm-2">
+                        <a href="#">&lt;</a>
+                        <a href="#">&gt;</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container">
-            <div class="row">
+            <div class="fifth row">
                 <div class="col-sm-2">
-        <img src="http://placehold.it/60x50" alt="">
+                    <img src="http://placehold.it/150x100" alt="">
                 </div>
                 <div class="col-sm-2">
-        <img src="http://placehold.it/60x50" alt="">
+                    <img src="http://placehold.it/150x100" alt="">
                 </div>
                 <div class="col-sm-2">
-        <img src="http://placehold.it/60x50" alt="">
+                    <img src="http://placehold.it/150x100" alt="">
                 </div>
                 <div class="col-sm-2">
-        <img src="http://placehold.it/60x50" alt="">
+                    <img src="http://placehold.it/150x100" alt="">
                 </div>
                 <div class="col-sm-2">
-        <img src="http://placehold.it/60x50" alt="">
+                    <img src="http://placehold.it/150x100" alt="">
                 </div>
                 <div class="col-sm-2">
-        <img src="http://placehold.it/60x50" alt="">
+                    <img src="http://placehold.it/150x100" alt="">
                 </div>
             </div>
         </div>
         <br>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-        <h5>SIGN UP TO RECEIVE THE LATEST FASHION NEWS</h5>
-                </div>
-                <div class="col-sm-6">
-        <form action="http://www.example.com/comments.php">
-            <textarea name="comments" col="20" rowa="4">Enter your email address</textarea>
-            <input type="submit" value="SIGN UP"
-        </form>
+        
+        <div class="sixth">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <h4>SIGN UP TO RECEIVE THE LATEST FASHION NEWS</h4>
+                    </div>
+                    <div class="col-sm-4">
+                        <form action="http://www.example.com/subscribe.php">
+                            <input type="text" name="email"/>
+                            <input type="submit" value="Sign Up"/>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-
         <!--Bottom-->
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-        <h5>MY ACCOUNT</h5>
-        <ul>
-            <li><a href="#">My account</a></li>
-            <li><a href="#">Personal info</a></li>
-            <li><a href="#">Addresses</a></li>
-            <li><a href="#">Discount</a></li>
-            <li><a href="#">Orders history</a></li>
-            <li><a href="#">Your vouchers</a></li>
-        </ul>
-        <br>
-                </div>
-                <div class="col-sm-3">
-        <h5>INFORMATION</h5>
-        <ul>
-            <li> <a href="#">New products</a></li>
-            <li> <a href="#">Top sellers</a></li>
-            <li> <a href="#">Specials</a></li>
-            <li> <a href="#">Manufacturers</a></li>
-            <li> <a href="#">Suppliers</a></li>
-            <li> <a href="#">Our stores</a></li>
-        </ul>
-        <br>
-                </div>
-                <div class="col-sm-3">
-        <h5>FROM TWITTER</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, placeat? <a href="#">http://t.co?MqacST476</a></p>
-        <p>about an hour ago</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium <a href="#">http://t.co/CCkfps248sq</a> consectetur ligula</p>
-        <p>about 3 hours ago</p>
-        <br>
-                </div>
-                <div class="col-sm-3">
+        <div class="bottom">
+                <div class="container">
                     <div class="row">
-                        <div class="col-sm-6">
-        <h5>FACEBOOK</h5> 
+                        <div class="col-sm-3">
+                            <h4>MY ACCOUNT</h4>
+                            <ul>
+                                <li><a href="#">My account</a></li>
+                                <li><a href="#">Personal info</a></li>
+                                <li><a href="#">Addresses</a></li>
+                                <li><a href="#">Discount</a></li>
+                                <li><a href="#">Orders history</a></li>
+                                <li><a href="#">Your vouchers</a></li>
+                            </ul>
+                            <br>
                         </div>
-                        <div class="col-sm-6">
-        <a href="#">Like!</a>
+                        <div class="col-sm-3">
+                            <h4>INFORMATION</h4>
+                            <ul>
+                                <li> <a href="#">New products</a></li>
+                                <li> <a href="#">Top sellers</a></li>
+                                <li> <a href="#">Specials</a></li>
+                                <li> <a href="#">Manufacturers</a></li>
+                                <li> <a href="#">Suppliers</a></li>
+                                <li> <a href="#">Our stores</a></li>
+                            </ul>
+                            <br>
+                        </div>
+                        <div class="col-sm-3">
+                            <h4>FROM TWITTER</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, placeat? <a href="#">http://t.co?MqacST476</a></p>
+                            <p>about an hour ago</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium <a href="#">http://t.co/CCkfps248sq</a> consectetur ligula</p>
+                            <p>about 3 hours ago</p>
+                            <br>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <h4>FACEBOOK</h4> 
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="" target="blank" class="button">Like</a>
+                                </div>
+                            </div>
+                            
+                                <p>1452 people like PromoKit</p>
+                            <div class="bratz row">
+                                <div class="col-sm-3">
+                                    <img src="images/brat1.jpg" style="width: 70px" height="70px" alt="">
+                                    <p>Anna</p>
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="images/brat2.jpg" width="70px" height="70px" alt="">
+                                    <p>Jade</p>
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="images/brat3.jpg" width="70px" height="70px" alt="">
+                                    <p>Brittany</p>
+                                </div>
+                            </div>
+                            <div class="bratzz row">
+                                <div class="col-sm-3">
+                                    <img src="images/brat4.jpg" width="70px" height="70px" alt="">
+                                    <p>Milla</p>
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="images/brat5.jpg" width="70px" height="70px" alt="">
+                                    <p>Justine</p>
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="images/brat6.jpg" width="70px" height="70px" alt="">
+                                    <p>Maria</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-        <p>1452 people like PromoKit</p>
-        <img src="http://placehold.it/30x30" alt="">
-        <p>Anna</p>
-        <img src="http://placehold.it/30x30" alt="">
-        <p>Tom</p>
-        <img src="http://placehold.it/30x30" alt="">
-        <p>Antuan</p>
-        <br>
-        <img src="http://placehold.it/30x30" alt="">
-        <p>Milla</p>
-        <img src="http://placehold.it/30x30" alt="">
-        <p>Justine</p>
-        <img src="http://placehold.it/30x30" alt="">
-        <p>Maria</p>
                 </div>
             </div>
-        </div>
     </body>
-                
+                        
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-        <img src="http://placehold.it/15x15" alt="">
-        <img src="http://placehold.it/15x15" alt="">
-        <img src="http://placehold.it/15x15" alt="">
-        <img src="http://placehold.it/15x15" alt="">
-        <img src="http://placehold.it/15x15" alt="">
-        <img src="http://placehold.it/15x15" alt="">
-        <img src="http://placehold.it/15x15" alt="">
-        <img src="http://placehold.it/15x15" alt="">
-                </div>
-                <div class="col-sm-6">
-        <p> &copy; 2012 Powered by WooCommerce. All Rights Reserved.</p>
+        <footer>
+            <div class="last">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="images/img13.jpg" alt="">
+                        <img src="images/img14.jpg" alt="">
+                        <img src="images/img15.jpg" alt="">
+                        <img src="images/img16.jpg" alt="">
+                        <img src="images/img17.jpg" alt="">
+                        <img src="images/img18.jpg" alt="">
+                        <img src="images/img19.jpg" alt="">
+                        <img src="images/img20.jpg" alt="">
+                    </div>
+                    <div class="col-sm-6">
+                        <p> &copy; 2012 Powered by WooCommerce. All Rights Reserved.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+            </div>
+        </footer>
 </html>
